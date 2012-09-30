@@ -1,0 +1,76 @@
+cpp -P crazy.ip1 > crazy.ipf
+ipfc crazy.ipf
+Operating System/2 Information Presentation Facility Compiler
+Version 3.00.016 October 19 1995
+Copyright (C) IBM Corporation 1991-1995
+All rights reserved
+
+Compiling document with following Country Code, Code Page:
+49, 850
+
+<crazy.ipf:194> Warning 302: Duplicate ID [2002]
+......
+<crazy.ipf:418> Warning 302: Duplicate ID [2100]
+
+<crazy.ipf:424> Warning 302: Duplicate ID [2100]
+
+<crazy.ipf:433> Warning 302: Duplicate ID [2100]
+.
+<crazy.ipf:447> Warning 208: Missing tag [dl]
+.
+<crazy.ipf:464> Warning 208: Missing tag [dl]
+
+<crazy.ipf:471> Warning 302: Duplicate ID [2101]
+
+<crazy.ipf:477> Warning 302: Duplicate ID [2101]
+
+<crazy.ipf:482> Warning 302: Duplicate ID [2101]
+
+<crazy.ipf:495> Warning 302: Duplicate ID [2101]
+
+<crazy.ipf:508> Warning 302: Duplicate ID [2101]
+.
+<crazy.ipf:523> Warning 208: Missing tag [dl]
+
+<crazy.ipf:531> Warning 302: Duplicate ID [2103]
+
+<crazy.ipf:536> Warning 302: Duplicate ID [2103]
+
+<crazy.ipf:543> Warning 302: Duplicate ID [2103]
+
+<crazy.ipf:551> Warning 302: Duplicate ID [2103]
+.
+<crazy.ipf:568> Warning 302: Duplicate ID [2200]
+
+<crazy.ipf:572> Warning 302: Duplicate ID [2200]
+
+<crazy.ipf:576> Warning 302: Duplicate ID [2200]
+
+<crazy.ipf:583> Warning 302: Duplicate ID [2200]
+.
+<crazy.ipf:600> Warning 302: Duplicate ID [2250]
+
+<crazy.ipf:609> Warning 302: Duplicate ID [2250]
+..
+Resolving cross-references
+
+Cross-references resolved
+.............
+
+Statistics : 
+
+Document title : Crazy Clock - Help
+
+Total panels created        : 13
+Panels defined by name      : 13
+Panels defined by number    : 13
+Words in dictionary         : 744
+Global index entries        : 0
+Total index entries         : 54
+Total fonts used            : 2
+Files referenced externally : 0
+Panels defined externally   : 0
+Document's Country Code     : 49
+Document's Code Page        : 850
+
+Output file successfully created (HLP) [crazy.HLP]

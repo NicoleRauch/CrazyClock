@@ -1,0 +1,43 @@
+# Makefile for Crazy.exe
+
+CC = wpp386
+# preprocessing flags:
+CPPFLAGS = 
+# compiling flags:
+CCFLAGS = -w4 -e25 -zq -od -d2 -bm -mf -4s -bt=os2
+# include list:
+INCLUDES = -i=F:\WATCOM\h;f:\toolkit\h;F:\WATCOM\h\os2;F:\arbeit\progr\_Standard
+# resource compiler:
+RC = rc
+
+#implicit rules for object files, res files and help files:
+
+%.obj : %.cpp %.h
+	$(CC) $< $(INCLUDES) $(CCFLAGS) 
+
+%.res : %.rc
+	$(RC) -i f:\toolkit\h -i f:\WATCOM\h -i f:\WATCOM\h\os2 -r $< $@
+
+%.hlp : %.ip1
+	cpp -P $< > $*.ipf
+	ipfc $*.ipf
+
+
+# the first real rule:
+OBJ1 = crazy.obj
+OBJ2 = mmsound.obj
+OBJ3 = mytime.obj
+OBJ4 = profile.obj
+OBJECTFILES = $(OBJ1) $(OBJ2) $(OBJ3) $(OBJ4)
+LINKFILES = $(OBJ1),$(OBJ2),$(OBJ3),$(OBJ4)
+
+crazy.exe : $(OBJECTFILES) crazy.def crazy.dlg crazy.ico crazy.res crazy.hlp
+	wlink SYS os2v2 pm op m d all op st=8192 op maxe=25 op q op symf NAME crazy FIL $(LINKFILES)
+	rc -i $[: -i E:\WATCOM\h -i E:\WATCOM\h\os2 crazy.res crazy.exe
+
+# dependencies for the implicit rules:
+
+#crazy.obj : 
+#mmsound.obj :
+#mytime.obj :
+#profile.obj :

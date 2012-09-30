@@ -1,0 +1,11 @@
+NAME Crazy Clock WINDOWAPI
+
+DESCRIPTION 'A clock for crazy people'
+
+DATA    MULTIPLE
+
+STACKSIZE   8192
+HEAPSIZE    1024
+
+PROTMODE
+

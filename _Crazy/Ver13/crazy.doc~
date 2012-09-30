@@ -1,0 +1,83 @@
+Crazy Clock    (C) 1994-96 Nicole Greiber
+
+This program is a clock with a quite unusual display.
+Try it, learn to read it and impress your friends!
+
+This package contains the following files:
+    crazy.exe    The program
+    crazy.hlp    Online help
+    crazy.doc    This file
+    Various sounds:
+    fe0.wav, ..., fe9.wav will be used to read the numbers
+    alarm.wav    the alarm sound
+    chime.wav    the hour's chime
+
+The program is released as postcardware. To register it, please
+send a postcard with a nice picture to the address listed below!
+
+You can contact the author 
+via eMail (InterNet) : Nicole.Greiber@Fernuni-Hagen.de
+or via SnailMail:
+Nicole Greiber
+Brueningstr. 6
+42119 Wuppertal
+GERMANY
+
+For detailed information and conditions of use please
+refer to the online help.
+
+Have fun and enjoy!
+
+Nicole
+
+
+================================
+Version history for Crazy Clock:
+
+Version 1.3, released on 9.Mar.96
+   -Fix: Now the profile is also saved when the program is closed by
+    shutting down OS/2
+   -Changed the menu structure: now the program settings can be
+    adjusted in one dialog
+   -Added an Alarm Clock feature
+   -Added an hour chime
+   -Added Help buttons to each dialog box
+
+Version 1.2, released on 27.Feb.95
+   -Added sound; now you can have the numbers read to you
+   -Now the program remembers where it has been minimized and where
+    it has been restored
+   -Now the window can be moved with the left mouse button while
+    the titlebar is hidden
+   -Now the time can be displayed either in 12 hour- or in 24-hour mode
+   -Renamed the "Show/Hide Frame" menu entry to "Show/Hide Title Bar"
+   -Renamed the "Exit" menu entry in the popup menu to "Close" and added
+    the hotkey Alt+F4 to it to match the system menu conventions
+   -Added a "Minimize" menu entry to the popup menu; now the window can
+    be minimized while the title bar is hidden
+   -The 32 x 32 icon is now bound into the program
+   -Now the clock's colors will change as soon as you select them in the
+    color dialog (and not only after closing the color dialog)
+   -New menu entry: Adjust Window Size. With this entry you can shrink
+    the window size so that the window will fit the dots perfectly
+   -Now you can select whether you want a frame around the minimized
+    program or not (menu entry Show / Hide Icon Frame in the system menu)
+   -The program window can now be much smaller than standard windows,
+    it can even be smaller than an icon!
+
+Version 1.1, released on 4.Jan.95
+   -Added an entry to the .INI file to remember whether the program
+    was minimized
+   -Adjusted the display when the program is minimized (now it won't
+    overpaint the icon frame any more :-)
+   -Added different dot sizes when the program is minimized
+   -Now the program checks whether the entire window will be visible
+    on the screen (and corrects this, if necessary)
+   -Added 32 x 32 Icon 
+
+Version 1.0, released on 17.Dec.94
+   -Initial release
+
+
+
+

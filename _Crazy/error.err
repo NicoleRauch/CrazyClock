@@ -1,0 +1,436 @@
+cpp -P crazy.ip1 > crazy.ipf
+ipfc crazy.ipf
+Operating System/2 Information Presentation Facility Compiler
+Version 3.00.016 October 19 1995
+Copyright (C) IBM Corporation 1991-1995
+All rights reserved
+
+Compiling document with following Country Code, Code Page:
+49, 437
+
+<crazy.ipf:188> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:188> Warning 202: Invalid attribute [2002]
+
+<crazy.ipf:188> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:188> Warning 202: Invalid attribute [2002]
+
+<crazy.ipf:189> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:189> Warning 202: Invalid attribute [2002]
+
+<crazy.ipf:194> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:194> Warning 202: Invalid attribute [2501]
+
+<crazy.ipf:194> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:196> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:196> Warning 202: Invalid attribute [2502]
+
+<crazy.ipf:196> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:229> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:229> Warning 202: Invalid attribute [2500]
+
+<crazy.ipf:229> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:232> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:232> Warning 202: Invalid attribute [2503]
+
+<crazy.ipf:232> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:233> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:233> Warning 202: Invalid attribute [2101]
+
+<crazy.ipf:233> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:254> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:254> Warning 202: Invalid attribute [2100]
+
+<crazy.ipf:254> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:255> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:255> Warning 202: Invalid attribute [2200]
+
+<crazy.ipf:255> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:256> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:256> Warning 202: Invalid attribute [2250]
+
+<crazy.ipf:256> Warning 133: Attribute not defined [res= or refid=]
+.
+<crazy.ipf:273> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:273> Warning 202: Invalid attribute [2500]
+
+<crazy.ipf:273> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:273> Warning 202: Invalid attribute [2500]
+
+<crazy.ipf:274> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:274> Warning 202: Invalid attribute [2500]
+.
+<crazy.ipf:313> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:313> Warning 202: Invalid attribute [2501]
+
+<crazy.ipf:313> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:313> Warning 202: Invalid attribute [2501]
+
+<crazy.ipf:314> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:314> Warning 202: Invalid attribute [2501]
+
+<crazy.ipf:333> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:333> Warning 202: Invalid attribute [2502]
+
+<crazy.ipf:333> Warning 133: Attribute not defined [res= or refid=]
+.
+<crazy.ipf:352> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:352> Warning 202: Invalid attribute [2502]
+
+<crazy.ipf:352> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:352> Warning 202: Invalid attribute [2502]
+
+<crazy.ipf:353> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:353> Warning 202: Invalid attribute [2502]
+
+<crazy.ipf:365> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:365> Warning 202: Invalid attribute [2501]
+
+<crazy.ipf:365> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:366> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:366> Warning 202: Invalid attribute [2501]
+
+<crazy.ipf:366> Warning 133: Attribute not defined [res= or refid=]
+.
+<crazy.ipf:374> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:374> Warning 202: Invalid attribute [2504]
+
+<crazy.ipf:374> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:374> Warning 202: Invalid attribute [2504]
+
+<crazy.ipf:375> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:375> Warning 202: Invalid attribute [2504]
+.
+<crazy.ipf:408> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:408> Warning 202: Invalid attribute [2503]
+
+<crazy.ipf:408> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:408> Warning 202: Invalid attribute [2503]
+
+<crazy.ipf:409> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:409> Warning 202: Invalid attribute [2503]
+
+<crazy.ipf:440> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:440> Warning 202: Invalid attribute [2250]
+
+<crazy.ipf:440> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:449> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:449> Warning 202: Invalid attribute [2250]
+
+<crazy.ipf:449> Warning 133: Attribute not defined [res= or refid=]
+.
+<crazy.ipf:470> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:470> Warning 202: Invalid attribute [2100]
+
+<crazy.ipf:470> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:470> Warning 202: Invalid attribute [2100]
+
+<crazy.ipf:471> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:471> Warning 202: Invalid attribute [2100]
+
+<crazy.ipf:478> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:478> Warning 202: Invalid attribute [2103]
+
+<crazy.ipf:478> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:480> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:480> Warning 202: Invalid attribute [2101]
+
+<crazy.ipf:480> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:482> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:482> Warning 202: Invalid attribute [2104]
+
+<crazy.ipf:482> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:485> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:485> Warning 202: Invalid attribute [2100]
+
+<crazy.ipf:485> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:491> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:491> Warning 202: Invalid attribute [2100]
+
+<crazy.ipf:491> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:494> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:494> Warning 202: Invalid attribute [2503]
+
+<crazy.ipf:494> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:500> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:500> Warning 202: Invalid attribute [2100]
+
+<crazy.ipf:500> Warning 133: Attribute not defined [REFID]
+.
+<crazy.ipf:511> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:511> Warning 202: Invalid attribute [2103]
+
+<crazy.ipf:511> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:511> Warning 202: Invalid attribute [2103]
+
+<crazy.ipf:512> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:512> Warning 202: Invalid attribute [2100]
+
+<crazy.ipf:512> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:513> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:513> Warning 202: Invalid attribute [2103]
+
+<crazy.ipf:523> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:523> Warning 202: Invalid attribute [2503]
+
+<crazy.ipf:523> Warning 133: Attribute not defined [res= or refid=]
+.
+<crazy.ipf:528> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:528> Warning 202: Invalid attribute [2101]
+
+<crazy.ipf:528> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:528> Warning 202: Invalid attribute [2101]
+
+<crazy.ipf:529> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:529> Warning 202: Invalid attribute [2100]
+
+<crazy.ipf:529> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:530> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:530> Warning 202: Invalid attribute [2101]
+
+<crazy.ipf:538> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:538> Warning 202: Invalid attribute [2101]
+
+<crazy.ipf:538> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:544> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:544> Warning 202: Invalid attribute [2101]
+
+<crazy.ipf:544> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:549> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:549> Warning 202: Invalid attribute [2101]
+
+<crazy.ipf:549> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:562> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:562> Warning 202: Invalid attribute [2101]
+
+<crazy.ipf:562> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:572> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:572> Warning 202: Invalid attribute [2501]
+
+<crazy.ipf:572> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:575> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:575> Warning 202: Invalid attribute [2101]
+
+<crazy.ipf:575> Warning 133: Attribute not defined [REFID]
+.
+<crazy.ipf:590> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:590> Warning 202: Invalid attribute [2104]
+
+<crazy.ipf:590> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:590> Warning 202: Invalid attribute [2104]
+
+<crazy.ipf:591> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:591> Warning 202: Invalid attribute [2100]
+
+<crazy.ipf:591> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:592> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:592> Warning 202: Invalid attribute [2104]
+
+<crazy.ipf:601> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:601> Warning 202: Invalid attribute [2104]
+
+<crazy.ipf:601> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:606> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:606> Warning 202: Invalid attribute [2104]
+
+<crazy.ipf:606> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:614> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:614> Warning 202: Invalid attribute [2104]
+
+<crazy.ipf:614> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:622> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:622> Warning 202: Invalid attribute [2104]
+
+<crazy.ipf:622> Warning 133: Attribute not defined [REFID]
+.
+<crazy.ipf:631> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:631> Warning 202: Invalid attribute [2200]
+
+<crazy.ipf:631> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:631> Warning 202: Invalid attribute [2200]
+
+<crazy.ipf:632> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:632> Warning 202: Invalid attribute [2200]
+
+<crazy.ipf:639> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:639> Warning 202: Invalid attribute [2200]
+
+<crazy.ipf:639> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:643> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:643> Warning 202: Invalid attribute [2200]
+
+<crazy.ipf:643> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:647> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:647> Warning 202: Invalid attribute [2200]
+
+<crazy.ipf:647> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:651> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:651> Warning 202: Invalid attribute [2200]
+
+<crazy.ipf:651> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:654> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:654> Warning 202: Invalid attribute [2200]
+
+<crazy.ipf:654> Warning 133: Attribute not defined [REFID]
+.
+<crazy.ipf:664> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:664> Warning 202: Invalid attribute [2250]
+
+<crazy.ipf:664> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:664> Warning 202: Invalid attribute [2250]
+
+<crazy.ipf:665> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:665> Warning 202: Invalid attribute [2250]
+
+<crazy.ipf:671> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:671> Warning 202: Invalid attribute [2250]
+
+<crazy.ipf:671> Warning 133: Attribute not defined [REFID]
+
+<crazy.ipf:674> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:674> Warning 202: Invalid attribute [2503]
+
+<crazy.ipf:674> Warning 133: Attribute not defined [res= or refid=]
+
+<crazy.ipf:680> Warning 202: Invalid attribute [refid]
+
+<crazy.ipf:680> Warning 202: Invalid attribute [2250]
+
+<crazy.ipf:680> Warning 133: Attribute not defined [REFID]
+.
+<crazy.ipf:697> Warning 202: Invalid attribute [id=]
+
+<crazy.ipf:697> Warning 202: Invalid attribute [2350]
+
+<crazy.ipf:697> Warning 202: Invalid attribute [res=]
+
+<crazy.ipf:697> Warning 202: Invalid attribute [2350]
+
+<crazy.ipf:698> Warning 202: Invalid attribute [id]
+
+<crazy.ipf:698> Warning 202: Invalid attribute [2350]
+..............
+
+Statistics : 
+
+Document title : Crazy Clock - Help
+
+Total panels created        : 13
+Panels defined by name      : 0
+Panels defined by number    : 0
+Words in dictionary         : 738
+Global index entries        : 0
+Total index entries         : 32
+Total fonts used            : 2
+Files referenced externally : 0
+Panels defined externally   : 0
+Document's Country Code     : 49
+Document's Code Page        : 437
+
+Output file successfully created (HLP) [crazy.HLP]

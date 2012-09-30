@@ -1,0 +1,12 @@
+profile.cpp(93): Warning! W389: (col 35) integral value may be truncated during assignment or initialization 
+profile.cpp(94): Warning! W389: (col 35) integral value may be truncated during assignment or initialization 
+profile.cpp(95): Warning! W389: (col 35) integral value may be truncated during assignment or initialization 
+profile.cpp(96): Warning! W389: (col 35) integral value may be truncated during assignment or initialization 
+profile.cpp(130): Warning! W389: (col 64) integral value may be truncated during assignment or initialization 
+profile.cpp(132): Warning! W389: (col 49) integral value may be truncated during assignment or initialization 
+profile.cpp(134): Warning! W389: (col 72) integral value may be truncated during assignment or initialization 
+profile.cpp(140): Warning! W389: (col 64) integral value may be truncated during assignment or initialization 
+profile.cpp(142): Warning! W389: (col 49) integral value may be truncated during assignment or initialization 
+profile.cpp(144): Warning! W389: (col 72) integral value may be truncated during assignment or initialization 
+profile.cpp(199): Warning! W391: (col 17) assignment found in boolean expression 
+profile.cpp(295): Warning! W391: (col 17) assignment found in boolean expression 

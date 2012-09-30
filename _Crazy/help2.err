@@ -1,0 +1,32 @@
+cpp -P crazy.ip1 > crazy.ipf
+ipfc crazy.ipf
+Operating System/2 Information Presentation Facility Compiler
+Version 3.00.016 October 19 1995
+Copyright (C) IBM Corporation 1991-1995
+All rights reserved
+
+Compiling document with following Country Code, Code Page:
+49, 850
+.............
+Resolving cross-references
+
+Cross-references resolved
+.............
+
+Statistics : 
+
+Document title : Crazy Clock - Help
+
+Total panels created        : 13
+Panels defined by name      : 13
+Panels defined by number    : 13
+Words in dictionary         : 744
+Global index entries        : 0
+Total index entries         : 54
+Total fonts used            : 2
+Files referenced externally : 0
+Panels defined externally   : 0
+Document's Country Code     : 49
+Document's Code Page        : 850
+
+Output file successfully created (HLP) [crazy.HLP]

@@ -1,0 +1,552 @@
+/* this file is the version of the helpfile before preprocessing.
+*/
+#include "crazy.h"
+
+:userdoc.
+:title.Crazy Clock - Help
+:h1 id=EXTHELP_CLOCK res=EXTHELP_CLOCK.Crazy Clock
+:i1 id=EXTHELP_CLOCK.Crazy Clock
+
+:lines align=center.
+Crazy Clock
+Version 1.3
+(C) 1994-96 :link reftype=hd res=PANEL_ABOUT.Nicole Greiber:elink.
+N&amp.O Design
+:p.This program is :link reftype=hd res=PANEL_POSTCARD.Postcardware:elink.! 
+:elines.
+:p.
+:p.
+:hp7.Crazy:ehp7.
+.br
+Crazy Clock is crazy.
+.br
+Crazy is Crazy Clock.
+.br
+Crazy crazy is crazy...
+.br
+Am I crazy?
+.br
+No, only user of Crazy Clock.
+:lines align=center.
+:hp1.Pascal Gienger:ehp1.
+:elines.
+:p.
+
+Hello!
+.br
+Are you looking at this in a puzzled way, thinking&colon. &odq.What&apos.s
+all this good for?&cdq. At least you are curious enough to have a look
+at the helpfile, good! Come on, don&apos.t give up that early, try to
+figure it out yourself! Play around with it, turn the seconds on and off,
+adjust the colors and try to discover the system!
+:p.
+Oh, you did this already? And you don&apos.t have a clue? Well then, let
+me help you: It&apos.s a clock! And it tells you the time!
+:p.
+Hmm, you still look confused. All right, if you really want to know
+how it works, have a look at the page 
+:link reftype=hd res=PANEL_CIRCLES.What are these coloured circles good for?:elink.
+:p.
+Please make sure you don&apos.t miss any of Crazy Clock&apos.s nice
+features like :link reftype=hd res=PANEL_MINIMIZE.minimizing to desktop:elink.
+or :link reftype=hd res=HELP_OPTIONS_SETTINGS.MMPM support:elink.!
+:p.
+Now Crazy Clock is also available for the Macintosh Computer! Thanks
+to Olaf, the "other half" of N&amp.O Design. If you want to know more
+about the Mac version, please contact Olaf at rauch@wrcs3.urz.uni-wuppertal.de.
+:p.
+Crazy Clock will create an .INI file in the current working directory.
+When you exit the program, it stores all settings in this file and
+restores them at the next start.
+:p.
+You will notice that the display refresh will sometimes take a short
+while (e. g. after you uncovered the window). This is not a bug, it&apos.s
+a feature &colon.-) Since some or all parts of the display are refreshed every
+second, I don&apos.t refresh the window every time when it&apos.s necessary
+but simply wait for the next second where the window will be painted
+nevertheless. This is my attempt to minimize painting overhead.
+:p.
+For an explanation of the menus please refer to
+:lm margin=6.
+:sl compact.
+
+:li.:link reftype=hd res=HELP_OPTIONS_MENU.Options Menu:elink.
+:li.:link reftype=hd res=HELP_HELP_MENU.Help Menu:elink.
+:li.:link reftype=hd res=HELP_SYS_MENU.System Menu Additions:elink.
+
+:esl.
+:lm margin=1.
+:p.
+:i1 id=EXTHELP_CLOCK.Warranty
+Last not least, you should be aware that this program is distributed
+:hp8.WITHOUT ANY WARRANTY:ehp8. of any kind; not even with the implied
+warranty of merchantability or fitness for a particular purpose.
+.br
+You are allowed to copy and distribute the program as long as you
+don&apos.t charge more than a nominal fee for handling etc. and as
+long as all copyright notices are kept within the program and the
+documentation.
+
+/******************What are these coloured circles good for?***************/
+
+:h2 id=PANEL_CIRCLES res=PANEL_CIRCLES.What are these coloured circles good for?
+:i1 id=PANEL_CIRCLES.What are these coloured circles good for?
+
+:p.For those of you who haven&apos.t guessed it yet, it&apos.s a clock!
+Now that it&apos.s clear, you may ask: How does the clock work?
+I assume that all of you have seen a clock with a digital
+display, also known as 7-segment-display. You can enumerate
+these seven segments like this&colon.
+:p.
+:artwork align=center name='bilder\7seg.bmp'.
+:p.
+For every number that is displayed, each of the segments
+is either on or off. Now you can arrange the segments in any order you
+like, and they will still have the same information (the on/off
+code for each number is unique, otherwise you&apos.d have two numbers
+in the "normal" digital display that looked the same).
+And that&apos.s what I did&colon. I simply reordered the segments like 
+this&colon.
+:p.
+:artwork align=center name='bilder\line.bmp'.
+:p.
+
+Then I stacked the numbers on top of each other, so that the
+1-second indicator is the lowest, followed by the 10-second-indicator,
+the 1-minute-indicator and so on, up to the 10-hour-indicator.
+For example, when it&apos.s 12&colon.34&colon.56, the time will be displayed 
+like this&colon.
+:p.
+:artwork align=center name='bilder\12_numbers.bmp'.
+:p.
+You don&apos.t believe that anybody will be able to tell the time from
+this crazy display? Uh, don&apos.t be so pessimistic! Give it a try, and
+in a few weeks you&apos.ll be able to read it like any other clock.
+When you remember how the segments are coded, you can always count
+them and thus figure out what they display.
+
+/*END**************What are these coloured circles good for?***************/
+
+/******************About the author****************************************/
+
+:h2 id=PANEL_ABOUT res=PANEL_ABOUT.About the author
+:i1 id=PANEL_ABOUT.About the author
+:p.This crazy little program was written by Nicole Greiber.
+It was inspired by a real Crazy Clock that I&apos.ve built out of a radio 
+alarm clock. Since this clock is not able to display seconds, and since
+I&apos.m very fond of funny nonsense programs lying around on my computer
+and wasting my precious CPU cycles, I felt the urgent need to create
+a software Crazy Clock. And here it is!
+:p.
+If you like this program, too (and also if you hate it), if (not when)
+you find any bugs or have complaints, wishes or any ideas on how to improve 
+it, please contact me
+:p.
+via eMail (InterNet)&colon.
+:p.
+:lm margin=10.
+Nicole.Greiber@Fernuni-Hagen.de
+:lm margin=1.
+:p.
+or via SnailMail (that&apos.s also where you can send your 
+:link reftype=hd res=PANEL_POSTCARD.postcard:elink. to)&colon.
+.br
+:lines align=left.
+:lm margin=10.
+Nicole Greiber
+BrÅningstr. 6
+42119 Wuppertal
+GERMANY
+:elines.
+:lm margin=1.
+:p.
+From time to time there seem to occur some problems on the machine
+where I get my email from. Usually they get fixed within some days.
+So when an email rebounces, please try to post it again - sooner or
+later I will receive it. 
+
+/*END**************About the author****************************************/
+
+/*******************Postcardware**************************************/
+:h2 id=PANEL_POSTCARD res=PANEL_POSTCARD.Postcardware - what is it?
+:i1 id=PANEL_POSTCARD.Postcardware - what is it?
+:p.
+This program is released as postcardware.
+:p.
+That means, when you like
+it and want to use it, I ask you to send me a postcard with a nice picture
+of your home town. 
+:p.
+I have two reasons for this&colon. First, I like to get mail (well, who
+doesn&apos.t?) and second, I&apos.m curious to see whether there is
+anybody who likes and uses this program (apart from myself).
+:p.
+For :link reftype=hd res=PANEL_ABOUT.my address:elink.
+see :link reftype=hd res=PANEL_ABOUT.my address:elink..
+:p.
+Hey, the air-mail fee for
+a postcard from the USA to Germany is only 40 cents! 
+
+/*END***************Postcardware**************************************/
+
+/*******************Credits*******************************************/
+:h2 id=PANEL_CREDITS res=PANEL_CREDITS.Credits
+:i1 id=PANEL_CREDITS.Credits
+:p.
+There are many people who helped me in developing Crazy Clock, and I
+want to thank all of them.
+:p.
+First of all, my thanks go to Olaf, my partner, who has an
+enormous talent to discover bugs. 
+
+:p.
+Thanks to everybody who sent me mail or even a postcard. Most of the improvements
+of Crazy Clock have been suggested by one of you. Please go on!! 
+:p.
+William Scott Hiles helped me to manage playing sounds and allowed
+me to use his source code.
+:p.
+Michael Kilby burdened himself with the task of proofreading the 
+documentation.
+:p.
+Larry Salomon Jr. was also haunted by my questions and patiently answered 
+all of them.
+:p.
+Martin Schwarz told me the trick how to create an animated icon.
+/*get along with the frame
+around the minimized icon.*/
+:p.
+Finally, I also want to thank IBM for their great operating system OS/2.
+
+/*END***************Credits*******************************************/
+
+/*******************Minimize to Desktop*******************************/
+
+
+:h1 id=PANEL_MINIMIZE res=PANEL_MINIMIZE.Minimize to Desktop
+:i1 id=PANEL_MINIMIZE.Minimize to Desktop
+:p.
+One of the nice features of Crazy Clock is that you can minimize
+it to the desktop and still have it show you the time. For this you
+must select "Minimize to Desktop" in the program object&apos.s settings
+notebook. When you minimize the program and close it then, it will
+still be minimized on the next startup. This is the only way to have
+Crazy Clock minimized on startup; checking "Start minimized" in the
+settings notebook doesn&apos.t have any effect.
+.br
+When you start Crazy
+Clock from the command line, you can only minimize it to the desktop
+when you checked "Minimize window to desktop" in OS/2&apos.s system
+object;
+otherwise it will always appear in the viewer folder. If you don&apos.t
+want this, the only
+solution for this problem is to create a program object for Crazy
+Clock.
+:p.
+In Crazy Clock&apos.s system menu you will find two entries that let you
+configure the outward appearance of the minimized program&colon.
+.br
+To make the
+animated icon look nice, I had to reduce the dots&apos. sizes; now they are
+so small that they are hardly visible on high-resolution displays -
+at least on my display (1024 x 768). I changed the dots to little
+ellipses which had the disadvantage that the spaces between the dots
+were reduced. Since there are so many possible display sizes that it&apos.s
+impossible for me to check them all and
+since I don&apos.t know how good your eyes are &colon.-), I leave it up
+to you&colon. You can choose between the small and the elliptic display!
+This is done in the :link reftype=hd res=HELP_SYS_MENU.system menu:elink..
+This choice will of course only affect the minimized icon, so if
+you prefer a normal window, the dots will always be perfectly round.
+Another restriction for the minimized icon is that the frames around
+the dots will not be displayed  (there&apos.s already few enough space 
+for the dots).
+:p.
+There is another feature for the minimized program: You can decide
+whether you want a frame around it or not. This choice is also set
+in the :link reftype=hd res=HELP_SYS_MENU.system menu:elink..
+Up to now, the frame around the icon is not very nice, but I hope
+that I can change this soon. If you really want a nice frame
+around the tiny window, there&apos.s another solution for you: You can
+now reduce the size of the restored window very much; you can even
+make the restored window smaller than an icon! 
+/*
+There is one thing I can&apos.t change right now: the frame around
+the icon. This frame is added by OS/2 so that the user can easily 
+distinguish between an icon and a minimized program.  I neither
+know how to suppress this frame nor how to force OS/2 to repaint it
+each time I overpainted it. So you have to go with the fact that
+the frame sometimes is visible and sometimes is not. If you know
+an answer to one of these questions, I&apos.d be very grateful if
+you&apos.d tell me.
+*/
+/*END***************Minimize to Desktop*******************************/
+
+
+/*******************Options Menu**************************************/
+
+:h1 id=HELP_OPTIONS_MENU res=HELP_OPTIONS_MENU.Options Menu
+:i1 id=HELP_OPTIONS_MENU sortkey=Options.Options Menu
+:p.
+The following menu items can either be accessed via the options menu
+in the menu bar or via the popup menu.
+
+:dl break=all tsize=3.
+
+:dt.:link reftype=hd res=HELP_OPTIONS_COLORS.:hp2.Colors...:ehp2.:elink.
+
+:dt.:link reftype=hd res=HELP_OPTIONS_SETTINGS.:hp2.Settings...:ehp2.:elink.
+
+:dt.:link reftype=hd res=HELP_OPTIONS_ALARM.:hp2.Alarm...:ehp2.:elink.
+
+:dt.:hp2.Adjust window size:ehp2.
+:i2 refid=HELP_OPTIONS_MENU sortkey=d.Adjust window size
+:i1 id=HELP_OPTIONS_MENU.Adjust window size
+:dd.With this menu entry you can shrink the window size so
+that it will fit the dots. 
+
+:dt.:hp2.Minimize:ehp2.
+:i2 refid=HELP_OPTIONS_MENU sortkey=e.Minimize
+:i1 id=HELP_OPTIONS_MENU.Minimize
+:dd.When you select this menu entry, the program will be 
+:link reftype=hd res=PANEL_MINIMIZE.minimized to the desktop:elink..
+This menu entry is only added to the popup menu since you can use
+the "Minimize" button in the upper right corner when the title bar
+is visible.
+
+:dt.:hp2.Close:ehp2.
+:i2 refid=HELP_OPTIONS_MENU sortkey=f.Close
+:i1 id=HELP_OPTIONS_MENU.Close
+:dd.This option is only available in the popup menu. It was added because
+when the title bar is hidden, the system menu cannot be accessed, 
+which made it impossible to exit Crazy Clock.
+
+:edl.
+
+/*END***************Options Menu**************************************/
+
+/*******************Options - Colors... ******************************/
+:h2 id=HELP_OPTIONS_COLORS res=HELP_OPTIONS_COLORS.Colors...
+:i2 refid=HELP_OPTIONS_MENU sortkey=a.Colors...
+:i1 id=HELP_OPTIONS_COLORS.Colors...
+:p.
+:dd.A window will be opened where you can choose
+the colors of the four clock elements Lights On, Lights Off,
+Frames and Background. Simply click on the desired color for
+each of these components, and it will at once be applied to the program.
+When you leave the window by pressing
+&odq.Cancel&cdq., the colors will be reset to their previous state.
+.br
+When the program is 
+:link reftype=hd res=PANEL_MINIMIZE.minimized to the desktop:elink., 
+the frames around the lights will not be displayed.
+/*END***************Options - Colors... ******************************/
+
+/*******************Options - Settings... ****************************/
+:h2 id=HELP_OPTIONS_SETTINGS res=HELP_OPTIONS_SETTINGS.Settings...
+:i2 refid=HELP_OPTIONS_MENU sortkey=b.Settings...
+:i1 id=HELP_OPTIONS_SETTINGS.Settings...
+:p.
+:dd.The Settings dialog box contains the following items. You can
+check and uncheck them and watch the results immediately.
+
+:dl break=all tsize=3.
+
+:dt.:hp2.Show seconds:ehp2.
+:i2 refid=HELP_OPTIONS_SETTINGS sortkey=a.Show seconds
+:i1 id=HELP_OPTIONS_SETTINGS.Show seconds
+:dd.With this option you can toggle the seconds&apos. display.
+When this item is checked, seconds are displayed.
+
+:dt.:hp2.24 hour mode:ehp2.
+:i2 refid=HELP_OPTIONS_SETTINGS sortkey=b.24 hour mode
+:i1 id=HELP_OPTIONS_SETTINGS.24 hour mode
+:dd.This check box toggles the representation of the time.
+
+:dt.:hp2.Show title bar:ehp2.
+:i2 refid=HELP_OPTIONS_SETTINGS sortkey=c.Show title bar
+:i1 id=HELP_OPTIONS_SETTINGS.Show title bar
+:dd.This option lets you hide or unhide the title bar and menu bar, 
+respectively. To make all entries
+of the menu bar accessible when the title bar is hidden, a popup menu is
+available. It can be displayed by clicking on the clock with the second mouse
+button (normally this is the right button). The popup menu is
+available even when the menu bar is visible.
+.br
+When the title bar is hidden, you can still move the window around
+on the Desktop: just drag the window with the left mouse button.
+
+:dt.:hp2.Read numbers:ehp2.
+:i2 refid=HELP_OPTIONS_SETTINGS sortkey=d.Read numbers
+:i1 id=HELP_OPTIONS_SETTINGS.Read numbers
+:dd.When you have the MMPM portion of OS/2 installed, you can use
+this menu option to get audible help on the numbers.
+Check this item, and then all you need to do is click on one of
+the numbers with the first mouse button (usually located at the
+left button), and you&apos.ll hear what this number stands for.
+This box is deliberately unchecked every time you start
+Crazy Clock (when you want to cheat, you have to work for it &colon.-)
+If you&apos.d like other languages to be included, please contact 
+:link reftype=hd res=PANEL_ABOUT.me:elink.! 
+
+:dt.:hp2.Hour chime:ehp2.
+:i2 refid=HELP_OPTIONS_SETTINGS sortkey=e.Hour chime
+:i1 id=HELP_OPTIONS_SETTINGS.Hour chime
+:dd.Checking this option will cause Crazy Clock to play a sound
+at every full hour. This works only when you have the MMPM portion 
+of OS/2 installed.
+
+:edl.
+
+
+/*END***************Options - Settings... ****************************/
+
+/*******************Options - Alarm... *******************************/
+:h2 id=HELP_OPTIONS_ALARM res=HELP_OPTIONS_ALARM.Alarm...
+:i2 refid=HELP_OPTIONS_MENU sortkey=c.Alarm...
+:i1 id=HELP_OPTIONS_ALARM.Alarm...
+:p.
+:dd.Here you can specify an alarm time and what will happen if it&apos.s
+time to notify you. Please note that once you&apos.ve activated the
+alarm function, it will stay activated until you turn it off.
+
+:dl break=all tsize=3.
+
+:dt.:hp2.Activate alarm:ehp2.
+:i2 refid=HELP_OPTIONS_ALARM sortkey=a.Activate alarm 
+:i1 id=HELP_OPTIONS_ALARM.Activate alarm 
+:dd.This button&apos.s purpose should be fairly obvious.
+
+:dt.:hp2.Sound:ehp2.
+:i2 refid=HELP_OPTIONS_ALARM sortkey=b.Sound
+:i1 id=HELP_OPTIONS_ALARM.Sound
+:dd.You will hear a sound when the alarm is due. With
+MMPM enabled, this will be a WAV file, otherwise you will hear
+an ordinary beep. 
+
+:dt.:hp2.Sound and window:ehp2.
+:i2 refid=HELP_OPTIONS_ALARM sortkey=ba.Sound and window
+:i1 id=HELP_OPTIONS_ALARM.Sound and window
+:dd.When you check this button, you will also hear an alarm sound.
+Additionally, you&apos.ll
+be notified by a message box that is opened (in case you&apos.ve
+left the room or were too busy to notice the sound).
+
+:dt.:hp2.Alarm time:ehp2.
+:i2 refid=HELP_OPTIONS_ALARM sortkey=c.Alarm time
+:i1 id=HELP_OPTIONS_ALARM.Alarm time
+:dd.Most important of all, you can enter the alarm time here.
+
+:edl.
+/*END***************Options - Alarm... *******************************/
+
+/*****************Help Menu**********************************************/
+
+:h1 id=HELP_HELP_MENU res=HELP_HELP_MENU.Help Menu
+:i1 id=HELP_HELP_MENU.Help Menu
+:p.
+The menu items of the help menu are&colon.
+
+:dl break=all tsize=3.
+
+:dt.:hp2.Help index:ehp2.
+:i2 refid=HELP_HELP_MENU sortkey=a.Help index
+:i1 id=HELP_HELP_MENU.Help index
+:dd.Here you can get an index of all help entries.
+:dt.:hp2.General help:ehp2.
+:i2 refid=HELP_HELP_MENU sortkey=b.General help
+:i1 id=HELP_HELP_MENU.General help
+:dd.This option shows general information about Crazy Clock.
+:dt.:hp2.Using Help:ehp2.
+:i2 refid=HELP_HELP_MENU sortkey=c.Using Help
+:i1 id=HELP_HELP_MENU.Using Help
+:dd.A system help page is displayed which explains how to use the help.
+:dt.:hp2.Keys and Buttons Help:ehp2.
+:i2 refid=HELP_HELP_MENU sortkey=d.Keys and Buttons Help
+:dd.Here you find a short reference to all keystrokes and mouse clicks.
+:dt.:hp2.Product information:ehp2.
+:i2 refid=HELP_HELP_MENU sortkey=e.Product information
+:i1 id=HELP_HELP_MENU.Product information
+:dd.Selecting this option will open a window that contains some information
+about Crazy Clock and its author.
+:edl.
+
+/*END*************Help Menu**********************************************/
+
+/*****************System Menu**********************************************/
+
+:h1 id=HELP_SYS_MENU res=HELP_SYS_MENU.System Menu Additions
+:i1 id=HELP_SYS_MENU.System Menu Additions
+:p.
+In the system menu you find the following additions:
+:dl break=all tsize=3.
+
+:dt.:hp2.Reduce / Enlarge Dot Size:ehp2.
+:i2 refid=HELP_SYS_MENU sortkey=a.Reduce / Enlarge Dot Size
+:i1 id=HELP_SYS_MENU.Reduce / Enlarge Dot Size
+:dd.With this option you can affect the dots&apos. sizes when the
+program is :link reftype=hd res=PANEL_MINIMIZE.minimized to the desktop:elink..
+When the dots are enlarged, they will have an elliptic shape. I hope
+that this option will increase the visibility of the dots when the
+program is minimized.
+
+:dt.:hp2.Show / Hide Icon Frame:ehp2.
+:i2 refid=HELP_SYS_MENU sortkey=b.Show / Hide Icon Frame
+:i1 id=HELP_SYS_MENU.Show / Hide Icon Frame
+:dd.Here you can determine whether the frame is drawn around the minimized
+program or whether it will be overpainted by Crazy Clock every time it
+appears. When the icon frame is hidden, the dots will also be slightly
+larger, due to the fact that the space that is otherwise occupied by the 
+frame can now be used for painting, too.
+
+:edl.
+:p.
+I added these entries to the system menu because the other menus cannot
+be accessed while the program is minimized.
+
+
+/*END*************System Menu**********************************************/
+
+/********* Keys help *************************/
+:h1 id=HELP_KEYS_HELP res=HELP_KEYS_HELP.Keys and Buttons Help
+:i1 id=HELP_KEYS_HELP.Keys and Buttons Help
+:p.
+The following keystrokes and mouse clicks can be used in Crazy Clock:
+:dl break=fit.
+:dt.:hp2.Alt+F4:ehp2.
+:dd.closes Crazy Clock no matter whether the title bar is visible or
+hidden or whether the program is minimized.
+
+:dt.:hp2.F1:ehp2.
+:dd.opens the online help for Crazy Clock. When F1 is pressed while
+the left mouse button is held down on a menu entry, you will get context
+sensitive help for that menu entry.
+
+:dt.:hp2.Pressing the left mouse button and moving the mouse (Dragging):ehp2.
+:dd.When the title bar is hidden, you can do this in the whole Crazy
+Clock window to move it. When the title bar is visible, you can only
+do this in the title bar (like with other programs).
+
+:dt.:hp2.Clicking the left mouse button:ehp2.
+:dd.When "Read Numbers" is checked in the Options menu or in the popup
+menu and when you have MMPM installed, you can click on a number of
+Crazy Clock&apos.s display, and Crazy Clock will tell you what this number
+stands for.
+
+:dt.:hp2.Clicking the right mouse button:ehp2.
+:dd.will cause a popup menu to appear. This popup menu contains the
+same entries as the normal menu (below the title bar) plus the 
+entries "Minimize" and "Close". It was added
+as a replacement for the normal menu, the system menu and the minimize button
+since they are not available when
+the title bar is hidden. 
+
+:edl.
+/**END***** Keys help *************************/
+
+:euserdoc.
+
+
+
+
+

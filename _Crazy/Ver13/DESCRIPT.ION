@@ -1,0 +1,21 @@
+alarm.wav Alarm Sound
+chime.wav Stundengong
+crazy.cpp Main Source file
+crazy.dlg Dialog Definitionen
+crazy.doc Kurzinfo, gehîrt zum Programmpaket
+crazy.exe Executable
+crazy.h Main Source header
+crazy.HLP Helpfile - fertig kompiliert
+crazy.ip1 Helpfile vor Preprocessing
+crazy.ipf Helpfile nach Preprocessing
+crazy.lk1 Gehîrt zum Watcom Projekt
+crazy.map Gehîrt zum Watcom Projekt
+crazy.mk Gehîrt zum Watcom Projekt
+crazy.mk1 Gehîrt zum Watcom Projekt
+crazy.sym Gehîrt zum Watcom Projekt
+crazy.tgt Gehîrt zum Watcom Projekt
+crazy.wpj Gehîrt zum Watcom Projekt
+fe0.wav female english = Nicole
+mmsound.cpp Quellcode fÅr meine Sound-Routinen
+mmsound.h Header fÅr meine Sound-Routinen
+upload.txt Kurzer Text f"ur das incoming-Verzeichn.

@@ -1,0 +1,78 @@
+!define BLANK ""
+e:\arbeit\progr\_crazy\sound.obj : e:\arbeit\progr\_sound\sound.cpp .AUTODEP&
+END
+ @e:
+ cd e:\arbeit\progr\_crazy
+ *wpp386 ..\_sound\sound.cpp -i=e:\TOOLKIT\BETA\H;e:\TOOLKIT\SOM\INCLUDE;e:\&
+TOOLKIT\INC;e:\TOOLKIT\H\GL;e:\TOOLKIT\H;e:\WATCOM\H;e:\arbeit\progr\_Standa&
+rd;e:\arbeit\progr\_Sound;D:\javaos2\include;D:\javaos2\include\os2;e:\TOOLK&
+IT\H\LIBC;.; -w4 -e25 -zq -otexan -ol -ol+ -oc -oi -oe20 -d1 -bm -4s -bt=os2&
+ -mf
+
+e:\arbeit\progr\_crazy\profile.obj : e:\arbeit\progr\_standard\profile.cpp .&
+AUTODEPEND
+ @e:
+ cd e:\arbeit\progr\_crazy
+ *wpp386 ..\_standard\profile.cpp -i=e:\TOOLKIT\BETA\H;e:\TOOLKIT\SOM\INCLUD&
+E;e:\TOOLKIT\INC;e:\TOOLKIT\H\GL;e:\TOOLKIT\H;e:\WATCOM\H;e:\arbeit\progr\_S&
+tandard;e:\arbeit\progr\_Sound;D:\javaos2\include;D:\javaos2\include\os2;e:\&
+TOOLKIT\H\LIBC;.; -w4 -e25 -zq -otexan -ol -ol+ -oc -oi -oe20 -d1 -bm -4s -b&
+t=os2 -mf
+
+e:\arbeit\progr\_crazy\crazy.obj : e:\arbeit\progr\_crazy\crazy.cpp .AUTODEP&
+END
+ @e:
+ cd e:\arbeit\progr\_crazy
+ *wpp386 crazy.cpp -i=e:\TOOLKIT\BETA\H;e:\TOOLKIT\SOM\INCLUDE;e:\TOOLKIT\IN&
+C;e:\TOOLKIT\H\GL;e:\TOOLKIT\H;e:\WATCOM\H;e:\arbeit\progr\_Standard;e:\arbe&
+it\progr\_Sound;D:\javaos2\include;D:\javaos2\include\os2;e:\TOOLKIT\H\LIBC;&
+.; -w4 -e25 -zq -otexan -ol -ol+ -oc -oi -oe20 -d1 -bm -4s -bt=os2 -mf
+
+e:\arbeit\progr\_crazy\local-profile.obj : e:\arbeit\progr\_crazy\local-prof&
+ile.cpp .AUTODEPEND
+ @e:
+ cd e:\arbeit\progr\_crazy
+ *wpp386 local-profile.cpp -i=e:\TOOLKIT\BETA\H;e:\TOOLKIT\SOM\INCLUDE;e:\TO&
+OLKIT\INC;e:\TOOLKIT\H\GL;e:\TOOLKIT\H;e:\WATCOM\H;e:\arbeit\progr\_Standard&
+;e:\arbeit\progr\_Sound;D:\javaos2\include;D:\javaos2\include\os2;e:\TOOLKIT&
+\H\LIBC;.; -w4 -e25 -zq -otexan -ol -ol+ -oc -oi -oe20 -d1 -bm -4s -bt=os2 -&
+mf
+
+e:\arbeit\progr\_crazy\mytime.obj : e:\arbeit\progr\_crazy\mytime.cpp .AUTOD&
+EPEND
+ @e:
+ cd e:\arbeit\progr\_crazy
+ *wpp386 mytime.cpp -i=e:\TOOLKIT\BETA\H;e:\TOOLKIT\SOM\INCLUDE;e:\TOOLKIT\I&
+NC;e:\TOOLKIT\H\GL;e:\TOOLKIT\H;e:\WATCOM\H;e:\arbeit\progr\_Standard;e:\arb&
+eit\progr\_Sound;D:\javaos2\include;D:\javaos2\include\os2;e:\TOOLKIT\H\LIBC&
+;.; -w4 -e25 -zq -otexan -ol -ol+ -oc -oi -oe20 -d1 -bm -4s -bt=os2 -mf
+
+e:\arbeit\progr\_crazy\crazy.res : e:\arbeit\progr\_crazy\crazy.rc .AUTODEPE&
+ND
+ @e:
+ cd e:\arbeit\progr\_crazy
+ rc -i $[: -i e:\WATCOM\h -i e:\WATCOM\h\os2 -r crazy.rc crazy.res
+
+e:\arbeit\progr\_crazy\crazy.exe : e:\arbeit\progr\_crazy\sound.obj e:\arbei&
+t\progr\_crazy\profile.obj e:\arbeit\progr\_crazy\crazy.obj e:\arbeit\progr\&
+_crazy\local-profile.obj e:\arbeit\progr\_crazy\mytime.obj e:\arbeit\progr\_&
+crazy\crazy.def e:\arbeit\progr\_crazy\crazy.dlg e:\arbeit\progr\_sound\soun&
+d.h e:\arbeit\progr\_standard\profile.h e:\arbeit\progr\_crazy\defs.h e:\arb&
+eit\progr\_crazy\local-profile.h e:\arbeit\progr\_crazy\mytime.h e:\arbeit\p&
+rogr\_crazy\crazy.ico e:\arbeit\progr\_crazy\crazy.res .AUTODEPEND
+ @e:
+ cd e:\arbeit\progr\_crazy
+ @%write crazy.lk1 NAME crazy
+ @%append crazy.lk1 FIL sound.obj,profile.obj,crazy.obj,local-profile.obj,my&
+time.obj
+ @%append crazy.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b crazy.imp 
+ @%append crazy.lk1 LIBR crazy.imp
+!endif
+ *wlink SYS os2v2 pm op m libr ..\_Standard\wcatdeb.lib libr mmpm2.lib op ma&
+xe=25 op q op symf @crazy.lk1
+!ifneq BLANK "crazy.res"
+ rc -i $[: -i e:\WATCOM\h -i e:\WATCOM\h\os2 crazy.res crazy.exe
+!endif
+

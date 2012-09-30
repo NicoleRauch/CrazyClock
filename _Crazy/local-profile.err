@@ -1,0 +1,5 @@
+local-profile.cpp(200): Warning! W389: (col 49) integral value may be truncated during assignment or initialization 
+local-profile.cpp(201): Warning! W389: (col 53) integral value may be truncated during assignment or initialization 
+local-profile.cpp(202): Warning! W389: (col 53) integral value may be truncated during assignment or initialization 
+local-profile.cpp(207): Warning! W014: (col 1) no reference to symbol 'colTmp' 
+local-profile.cpp(207): Note! N392: (col 1) 'COL_DEFS colTmp' in 'void WriteProfile( PROFILE &, unsigned long, char * )' defined in: local-profile.cpp(138) (col 14) 

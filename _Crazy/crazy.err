@@ -1,0 +1,14 @@
+crazy.cpp(242): Warning! W014: (col 1) no reference to symbol 'hab' 
+crazy.cpp(242): Note! N392: (col 1) 'unsigned long hab' in 'unsigned long syscall help_hook( unsigned long, short, unsigned short, unsigned short, _RECTL * )' defined in: crazy.cpp(232) (col 30) 
+crazy.cpp(242): Warning! W014: (col 1) no reference to symbol 'usSubTopic' 
+crazy.cpp(242): Note! N392: (col 1) 'unsigned short usSubTopic' in 'unsigned long syscall help_hook( unsigned long, short, unsigned short, unsigned short, _RECTL * )' defined in: crazy.cpp(233) (col 33) 
+crazy.cpp(242): Warning! W014: (col 1) no reference to symbol 'prclPos' 
+crazy.cpp(242): Note! N392: (col 1) '_RECTL * prclPos' in 'unsigned long syscall help_hook( unsigned long, short, unsigned short, unsigned short, _RECTL * )' defined in: crazy.cpp(233) (col 52) 
+crazy.cpp(797): Warning! W013: (col 7) unreachable code 
+crazy.cpp(920): Warning! W013: (col 7) unreachable code 
+crazy.cpp(993): Warning! W389: (col 38) integral value may be truncated during assignment or initialization 
+crazy.cpp(993): Warning! W389: (col 41) integral value may be truncated during assignment or initialization 
+crazy.cpp(993): Warning! W389: (col 44) integral value may be truncated during assignment or initialization 
+crazy.cpp(1009): Warning! W013: (col 7) unreachable code 
+crazy.cpp(1029): Warning! W013: (col 10) unreachable code 
+crazy.cpp(1034): Warning! W013: (col 4) unreachable code 

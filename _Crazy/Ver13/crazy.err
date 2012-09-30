@@ -1,0 +1,7 @@
+crazy.cpp(529): Warning! W389: (col 29) integral value may be truncated during assignment or initialization 
+crazy.cpp(752): Warning! W013: (col 9) unreachable code 
+crazy.cpp(866): Warning! W013: (col 9) unreachable code 
+crazy.cpp(948): Warning! W013: (col 9) unreachable code 
+crazy.cpp(957): Warning! W389: (col 64) integral value may be truncated during assignment or initialization 
+crazy.cpp(968): Warning! W013: (col 13) unreachable code 
+crazy.cpp(973): Warning! W013: (col 9) unreachable code 

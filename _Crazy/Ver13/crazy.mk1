@@ -1,0 +1,55 @@
+!define BLANK ""
+f:\arbeit\progr\_crazy\crazy.obj : f:\arbeit\progr\_crazy\crazy.cpp .AUTODEP&
+END
+ @f:
+ cd f:\arbeit\progr\_crazy
+ *wpp386 crazy.cpp -i=f:\WATCOM\h;f:\WATCOM\h\os2 -w4 -e25 -zq -otexan -ol -&
+ol+ -oc -oi -oe20 -d1 -bm -mf -4s -bt=os2
+
+f:\arbeit\progr\_crazy\mmsound.obj : f:\arbeit\progr\_crazy\mmsound.cpp .AUT&
+ODEPEND
+ @f:
+ cd f:\arbeit\progr\_crazy
+ *wpp386 mmsound.cpp -i=f:\WATCOM\h;f:\WATCOM\h\os2 -w4 -e25 -zq -otexan -ol&
+ -ol+ -oc -oi -oe20 -d1 -bm -mf -4s -bt=os2
+
+f:\arbeit\progr\_crazy\mytime.obj : f:\arbeit\progr\_crazy\mytime.cpp .AUTOD&
+EPEND
+ @f:
+ cd f:\arbeit\progr\_crazy
+ *wpp386 mytime.cpp -i=f:\WATCOM\h;f:\WATCOM\h\os2 -w4 -e25 -zq -otexan -ol &
+-ol+ -oc -oi -oe20 -d1 -bm -mf -4s -bt=os2
+
+f:\arbeit\progr\_crazy\profile.obj : f:\arbeit\progr\_crazy\profile.cpp .AUT&
+ODEPEND
+ @f:
+ cd f:\arbeit\progr\_crazy
+ *wpp386 profile.cpp -i=f:\WATCOM\h;f:\WATCOM\h\os2 -w4 -e25 -zq -otexan -ol&
+ -ol+ -oc -oi -oe20 -d1 -bm -mf -4s -bt=os2
+
+f:\arbeit\progr\_crazy\crazy.res : f:\arbeit\progr\_crazy\crazy.rc .AUTODEPE&
+ND
+ @f:
+ cd f:\arbeit\progr\_crazy
+ rc -i $[: -i f:\WATCOM\h -i f:\WATCOM\h\os2 -r crazy.rc crazy.res
+
+f:\arbeit\progr\_crazy\crazy.exe : f:\arbeit\progr\_crazy\crazy.obj f:\arbei&
+t\progr\_crazy\mmsound.obj f:\arbeit\progr\_crazy\mytime.obj f:\arbeit\progr&
+\_crazy\profile.obj f:\arbeit\progr\_crazy\crazy.def f:\arbeit\progr\_crazy\&
+crazy.dlg f:\arbeit\progr\_crazy\crazy.h f:\arbeit\progr\_crazy\mmsound.h f:&
+\arbeit\progr\_crazy\mytime.h f:\arbeit\progr\_crazy\profile.h f:\arbeit\pro&
+gr\_crazy\crazy.ico f:\arbeit\progr\_crazy\crazy.res .AUTODEPEND
+ @f:
+ cd f:\arbeit\progr\_crazy
+ @%write crazy.lk1 NAME crazy
+ @%append crazy.lk1 FIL crazy.obj,mmsound.obj,mytime.obj,profile.obj
+ @%append crazy.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b crazy.imp 
+ @%append crazy.lk1 LIBR crazy.imp
+!endif
+ *wlink SYS os2v2 pm op m op st=8192 op maxe=25 op q op symf @crazy.lk1
+!ifneq BLANK "crazy.res"
+ rc -i $[: -i f:\WATCOM\h -i f:\WATCOM\h\os2 crazy.res crazy.exe
+!endif
+

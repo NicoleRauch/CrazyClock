@@ -1,0 +1,111 @@
+#ifndef OS2_INCLUDED
+   #include <os2.h>
+#endif
+DLGINCLUDE 1 "E:\arbeit\PROGR\_Crazy\defs.h"
+
+DLGTEMPLATE DLG_ALARMMSG LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Crazy Alarm", DLG_ALARMMSG, 60, 10, 185, 116, WS_VISIBLE, 
+            FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        DEFPUSHBUTTON   "~Ok", DID_OK, 38, 9, 109, 40
+        LTEXT           "A L A R M !", -1, 42, 65, 121, 24
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+                        PRESPARAMS PP_FONTNAMESIZE, "24.Helv"
+    END
+END
+
+DLGTEMPLATE DLG_COLORS LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Colors", DLG_COLORS, 17, -18, 188, 154, WS_VISIBLE, FCF_SYSMENU | 
+            FCF_TITLEBAR
+    BEGIN
+        LTEXT           "Lights on:", -1, 8, 135, 41, 8
+        VALUESET        COLOR_LIGHT_ON, 73, 125, 93, 24, VS_COLORINDEX | 
+                        VS_BORDER | WS_GROUP
+                        CTLDATA 8, 0, 3, 5
+        LTEXT           "Lights off:", -1, 8, 102, 43, 8
+        VALUESET        COLOR_LIGHT_OFF, 73, 92, 93, 24, VS_COLORINDEX | 
+                        VS_BORDER | WS_GROUP
+                        CTLDATA 8, 0, 3, 5
+        VALUESET        COLOR_LIGHT_BORDER, 73, 59, 93, 24, VS_COLORINDEX | 
+                        VS_BORDER | WS_GROUP
+                        CTLDATA 8, 0, 3, 5
+        VALUESET        COLOR_BACKGND, 73, 26, 93, 24, VS_COLORINDEX | 
+                        VS_BORDER | WS_GROUP
+                        CTLDATA 8, 0, 3, 5
+        LTEXT           "Frames:", -1, 8, 69, 33, 8
+        LTEXT           "Background:", -1, 8, 36, 52, 8
+        DEFPUSHBUTTON   "~Ok", DID_OK, 8, 5, 40, 14
+        PUSHBUTTON      "Cancel", DID_CANCEL, 54, 5, 40, 14
+        PUSHBUTTON      "Help", DID_HELP, 100, 5, 40, 14
+    END
+END
+
+DLGTEMPLATE DLG_ALARM LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Crazy Alarm", DLG_ALARM, 81, 40, 148, 93, WS_VISIBLE, 
+            FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        DEFPUSHBUTTON   "~Ok", DID_OK, 6, 6, 40, 14
+        PUSHBUTTON      "Cancel", DID_CANCEL, 52, 6, 40, 14
+        SPINBUTTON      ALM_SECOND, 112, 28, 26, 12, SPBS_NUMERICONLY | 
+                        SPBS_MASTER | SPBS_JUSTRIGHT | WS_GROUP
+        SPINBUTTON      ALM_MINUTE, 90, 28, 17, 12, SPBS_NUMERICONLY | 
+                        SPBS_JUSTRIGHT | WS_GROUP
+        SPINBUTTON      ALM_HOUR, 68, 28, 17, 12, SPBS_NUMERICONLY | 
+                        SPBS_JUSTRIGHT | WS_GROUP
+        LTEXT           "Alarm time", ALM_TEXT, 6, 30, 55, 8
+        AUTOCHECKBOX    "~Activate alarm", ALM_ON, 6, 64, 79, 10
+        CTEXT           ":", -1, 84, 30, 6, 8
+        CTEXT           ":", -1, 106, 30, 6, 8
+        PUSHBUTTON      "Help", DID_HELP, 98, 6, 40, 14
+        AUTORADIOBUTTON "~Sound", ALM_SOUND, 19, 54, 100, 10, WS_GROUP | 
+                        WS_TABSTOP
+        AUTORADIOBUTTON "Sound and ~window", ALM_WINDOW, 19, 44, 110, 10, 
+                        WS_TABSTOP
+    END
+END
+
+DLGTEMPLATE DLG_ABOUT LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Product Information", DLG_ABOUT, 12, 18, 272, 108, WS_VISIBLE, 
+            FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        LTEXT           "Crazy Clock", -1, 103, 80, 87, 18
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+                        PRESPARAMS PP_FONTNAMESIZE, "18.Tms Rmn Italic"
+        LTEXT           "Version 1.4", -1, 117, 72, 60, 10
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00CF0000L
+                        PRESPARAMS PP_FONTNAMESIZE, "12.Tms Rmn Italic"
+        LTEXT           "THE gem for the PM!", -1, 101, 58, 93, 12
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00AF0000L
+                        PRESPARAMS PP_FONTNAMESIZE, "12.Tms Rmn Italic"
+        LTEXT           "(C) 1994 - 1996 Nicole Greiber", -1, 83, 46, 128, 8
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00008F00L
+        LTEXT           "N&O Design", -1, 118, 34, 58, 8
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00008F00L
+        LTEXT           "This clock is Postcardware!", -1, 85, 19, 123, 8
+        DEFPUSHBUTTON   "~Ok", DID_OK, 12, 8, 40, 14
+        ICON            IDR_MAIN, -1, 23, 68, 20, 16, WS_GROUP
+        LTEXT           "(press F1 for further information)", -1, 71, 11, 
+                        149, 8
+    END
+END
+
+DLGTEMPLATE DLG_SETTINGS LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Settings", DLG_SETTINGS, 12, 24, 150, 99, WS_VISIBLE, 
+            FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+        AUTOCHECKBOX    "~Show seconds", SET_SECONDS, 10, 80, 100, 10
+        AUTOCHECKBOX    "~24 hour mode", SET_24HOUR, 10, 70, 100, 10
+        AUTOCHECKBOX    "Show ~title bar", SET_TITLEBAR, 10, 60, 100, 10
+        AUTOCHECKBOX    "~Hour chime", SET_CHIME, 10, 50, 100, 10
+        AUTOCHECKBOX    "~Read Numbers", SET_READNUMBERS, 10, 40, 100, 10
+        AUTOCHECKBOX    "~Float to top", SET_FLOATTOTOP, 10, 30, 100, 10
+        DEFPUSHBUTTON   "~Ok", DID_OK, 10, 6, 40, 14
+        PUSHBUTTON      "Cancel", DID_CANCEL, 56, 6, 40, 14
+        PUSHBUTTON      "Help", DID_HELP, 102, 6, 40, 14
+    END
+END
